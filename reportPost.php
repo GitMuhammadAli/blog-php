@@ -1,6 +1,7 @@
 <?php
 session_start();
 include ('db.php');
+include ('header.php');
 
 if (!isset($_SESSION['user_id'])) {
   header("Location: login.php");
@@ -59,4 +60,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   </div>
 </body>
 
+
 </html>
+<?php include 'footer.php'; ?>
