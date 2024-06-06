@@ -4,7 +4,7 @@ include ('db.php');
 
 ?>
 <header class="navbar">
-  <a href="#" class="navbar-brand">BLogify</a>
+  <a href="index.php" class="navbar-brand">BLogify</a>
   <nav>
     <ul class="navbar-nav">
       <li>

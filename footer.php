@@ -1,3 +1,3 @@
 <footer>
-  <p>&copy; 2024 YourWebsiteName. All rights reserved.</p>
+  <p>&copy; 2024 Blogify. All rights reserved.</p>
 </footer>

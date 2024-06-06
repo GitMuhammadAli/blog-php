@@ -16,7 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $sql = "INSERT INTO posts (thread_id, user_id, content) VALUES ('$thread_id', '$user_id', '$content')";
     if ($conn->query($sql) === TRUE) {
-        // Send notifications to subscribers
         $post_id = $conn->insert_id;
         $sql_subscribers = "SELECT user_id FROM subscriptions WHERE thread_id='$thread_id'";
         $subscribers = $conn->query($sql_subscribers);
